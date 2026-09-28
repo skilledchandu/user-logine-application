@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <h1>Login Page</h1>
+
+        <div id="login">
+            <form action="/login" method="post">
+
+                <div class="msg">{{msg}}</div>
+
+                <input type="text" name="username" placeholder="Enter your Username" class="textbox">
+                <br><br>
+
+                <input type="password" name="password" placeholder="Enter your password" class="textbox">
+                <br><br>
+
+                <button type="submit" class="btn">Sign In</button>
+
+            </form>
+
+            <p class="bottom">
+                Don't have account?
+                <a href="/register" class="bottom">Sign Up Here</a>
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
